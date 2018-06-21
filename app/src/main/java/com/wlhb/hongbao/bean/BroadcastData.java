@@ -28,6 +28,7 @@ public class BroadcastData implements Serializable {
 
 
     public static class PageParameterBean {
+        public String userId;
     }
 
     public static class DataListBean {
@@ -58,6 +59,8 @@ public class BroadcastData implements Serializable {
         public int status;
         public int noticeId;
         public int type;
+        public String username;
+        public String userImg;
 
     }
 }

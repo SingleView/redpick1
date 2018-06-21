@@ -62,7 +62,7 @@ import retrofit2.Response;
  * Created by Administrator on 2018/3/25/025.
  */
 
-public class HomeFragment extends BaseFragment {
+public class HomeFragment extends BaseFragment implements BaiduMap.OnMapStatusChangeListener {
 
 
     @BindView(R.id.ll_notificationbar)
@@ -103,6 +103,9 @@ public class HomeFragment extends BaseFragment {
     private String fjprovince;
     private String fjcity;
     private String fjdistrict;
+
+    //地图缩放级别
+    private float zoomLevel;
 
     @Nullable
     @Override
@@ -164,13 +167,15 @@ public class HomeFragment extends BaseFragment {
         mBaiduMap = mMapView.getMap();
         mBaiduMap.setMyLocationEnabled(true);
         // 定位初始化
+        zoomLevel = 15f;
         MapStatus mMapStatus = new MapStatus.Builder()
                 .target(latLng)
-                .zoom((float) 15)
+                .zoom(zoomLevel)
                 .build();
         mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
         //改变地图状态
         mBaiduMap.setMapStatus(mMapStatusUpdate);
+        mBaiduMap.setOnMapStatusChangeListener(this);
         //获取系统公告
         Call<BaseResponse<BroadcastData>> call = service.broadcastdata(App.token);
         call.enqueue(new BaseCallback<BaseResponse<BroadcastData>>(call, this) {
@@ -218,6 +223,27 @@ public class HomeFragment extends BaseFragment {
     @Override
     public View loadView(LayoutInflater inflater, ViewGroup container) {
         return null;
+    }
+
+    @Override
+    public void onMapStatusChangeStart(MapStatus mapStatus) {
+
+    }
+
+    @Override
+    public void onMapStatusChangeStart(MapStatus mapStatus, int i) {
+
+    }
+
+    @Override
+    public void onMapStatusChange(MapStatus mapStatus) {
+        //当地图状态改变的时候，获取放大级别
+        zoomLevel = mapStatus.zoom;
+    }
+
+    @Override
+    public void onMapStatusChangeFinish(MapStatus mapStatus) {
+
     }
 
     /**
@@ -268,7 +294,7 @@ public class HomeFragment extends BaseFragment {
             //设置定位坐标,屏幕缩放大小zoom数值越小屏幕缩放越大,
             MapStatus msuMapStatus = new MapStatus.Builder()
                     .target(latLng)
-                    .zoom((float) 15)
+                    .zoom(zoomLevel)
                     .build();
             msuLocationMapStatusUpdate = MapStatusUpdateFactory
                     .newMapStatus(msuMapStatus);

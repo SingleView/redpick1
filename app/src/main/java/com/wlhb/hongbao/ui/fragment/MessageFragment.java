@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -130,9 +132,24 @@ public class MessageFragment extends BaseFragment {
                     helper.itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            app.writeInt("msgid", item.id);
-                            app.writeInt("type", 0);
-                            readyGo(NoticeDetailsActivity.class);
+                            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                            View v = View.inflate(context, R.layout.hongbao_dialog, null);
+                            TextView tvName = v.findViewById(R.id.tv_name);
+                            View bg = v.findViewById(R.id.view);
+                            tvName.setText(item.username);
+                            bg.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    //TODO 领取红包的逻辑
+                                }
+                            });
+                            builder.setView(v);
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
+                            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                            app.writeInt("msgid", item.id);
+//                            app.writeInt("type", 0);
+//                            readyGo(NoticeDetailsActivity.class);
                         }
                     });
                 } else {
