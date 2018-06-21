@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_bgxf">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/toppadding"
+            android:text="支付"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding"
+            android:id="@+id/tv_zf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_below="@+id/tv_zf"
+        android:background="@color/graybj"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="需要支付(元)"
+        android:layout_below="@id/tv_zf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bigpadding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/bigpadding"
+        android:layout_below="@id/tv_zf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/tv_jine"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_below="@id/tv_jine"
+        android:id="@+id/v_xhx"
+        android:background="@color/graybj"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rl_zffs"
+        android:layout_below="@id/v_xhx">
+
+
+        <RadioGroup
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/rg_zffs"
+            android:layout_marginLeft="@dimen/bigpadding"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="钱包余额"
+                android:id="@+id/rb_qianbao"
+                />
+
+
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="微信支付"
+                android:id="@+id/rb_weixin"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rg_zffs"
+            android:id="@+id/tv_qianbao"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/bigpadding"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/rl_zffs"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:text="确认支付"
+        android:id="@+id/bt_qrzf"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/padding"/>
+
+</RelativeLayout>

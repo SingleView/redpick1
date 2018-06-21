@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 顶部信息栏 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titlemenu"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/red"
+    android:fitsSystemWindows="true">
+
+    <!-- 左手边按钮，设置内部重心偏向为垂直居中 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_topmenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp">
+
+
+        <ImageView
+            android:id="@+id/top_menu_left_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+        <!-- 文本标题控件，设置布局为居中 -->
+
+        <TextView
+            android:id="@+id/top_menu_title"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TitleTextSize" />
+
+        <!-- 按钮控件，设置布局为偏右 -->
+
+        <ImageView
+            android:id="@+id/top_menu_right"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="center"
+            android:src="@drawable/more"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/right_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="XXX"
+            android:textColor="@color/white"
+            android:textSize="@dimen/BodyTextSize"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

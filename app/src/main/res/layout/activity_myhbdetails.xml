@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/red"
+        ></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/red"
+        android:id="@+id/layout_titlemenu"
+        >
+
+        <ImageView
+            android:id="@+id/menu_left"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:scaleType="center"
+            android:layout_marginLeft="10dp" />
+
+        <!-- 左手边按钮，设置内部重心偏向为垂直居中 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/layout_topmenu">
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rg_xiaoxi"
+                android:layout_marginTop="@dimen/toppadding"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_wqdhb"
+                    style="@style/fujin_bottom_tab_style"
+                    android:background="@drawable/gonggao_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="抢到的红包"
+                    android:textColor="@color/xiaoxi_rb_text_color"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_wfdhb"
+                    style="@style/fujin_bottom_tab_style"
+                    android:background="@drawable/xiaoxi_selector"
+                    android:text="我发的红包"
+                    android:gravity="center"
+                    android:textColor="@color/xiaoxi_rb_text_color"
+                    />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/ll_fhbxq"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布总金额"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/toppadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/graybj"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计影响人数"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/toppadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/ll_qhbxq"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收到的总金额"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/toppadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_sdzje"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/graybj"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最佳手气"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/toppadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_zjsq"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/graybj"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_wqdhb"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_wfdhb"
+        android:visibility="gone"/>
+
+</LinearLayout>

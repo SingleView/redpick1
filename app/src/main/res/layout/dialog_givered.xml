@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hongbaoda">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/bigpadding"
+            android:text="0.01"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:id="@+id/tv_jine"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_jine"
+            android:id="@+id/ll_hje"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shuaxin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换个金额"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_bgy"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ll_hje"
+            android:layout_marginTop="90dp"
+            android:text="发诚意红包"
+            android:textSize="@dimen/toppadding"
+            android:textColor="@color/red"
+            android:id="@+id/bt_fhb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对方收红包可开聊,三日内拒收退回"
+            android:layout_below="@id/bt_fhb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/toppadding"
+            android:textColor="@color/graybj"/>
+
+
+</RelativeLayout>

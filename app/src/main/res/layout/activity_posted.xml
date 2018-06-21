@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding"
+            android:hint="请输入标题(最多30个字)"
+            android:maxLength="30"
+            android:textSize="15dp"
+            android:background="@null"
+            android:id="@+id/et_biaoti"
+            android:layout_height="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graybj"/>
+
+        <RelativeLayout
+            android:id="@+id/sp_tzlx"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_tzlx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:hint="请选择帖子类型"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/padding"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="8dp"
+                android:layout_alignRight="@id/tv_tzlx"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding"
+                android:src="@drawable/xiala"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graybj"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="想要对大家说......"
+            android:background="@null"
+            android:textSize="15dp"
+            android:padding="@dimen/padding"
+            android:gravity="top|left"
+            android:id="@+id/et_neirong"
+            android:layout_height="270dp" />
+
+
+        <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+            android:id="@+id/snpl_moment_add_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginLeft="@dimen/padding"
+            app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+            app:bga_snpl_deleteDrawableOverlapQuarter="false"
+            app:bga_snpl_editable="true"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="3"
+            app:bga_snpl_itemWhiteSpacing="10dp"
+            app:bga_snpl_itemWidth="0dp"
+            app:bga_snpl_maxItemCount="9"
+            app:bga_snpl_otherWhiteSpacing="100dp"
+            app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+            app:bga_snpl_plusDrawable="@drawable/ic_add"
+            app:bga_snpl_plusEnable="true"
+            app:bga_snpl_sortable="true"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/jianbian_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开通VIP"
+            android:textSize="@dimen/bigpadding"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/bigpadding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="享有以下权益"
+            android:textSize="@dimen/bigpadding"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_syjc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding"
+        android:src="@drawable/shouyijiacheng" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收益加成"
+        android:textSize="@dimen/TitleTextSize"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_toRightOf="@id/iv_syjc"
+        android:layout_marginLeft="@dimen/padding"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收益提高25%"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/iv_syjc"
+        android:layout_marginLeft="@dimen/padding"
+        />
+
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybj"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_mfdzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/mianfeidazhaohu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费打招呼"
+            android:textSize="@dimen/TitleTextSize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_toRightOf="@id/iv_mfdzh"
+            android:layout_marginLeft="@dimen/padding"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打招呼不需要诚意红包"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/iv_mfdzh"
+            android:layout_marginLeft="@dimen/padding"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybj"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_cjgdsq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/chuanjiangenduoshequ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建更多社区"
+            android:textSize="@dimen/TitleTextSize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_toRightOf="@id/iv_cjgdsq"
+            android:layout_marginLeft="@dimen/padding"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建社区上限变大"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/iv_cjgdsq"
+            android:layout_marginLeft="@dimen/padding"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/graybj"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:id="@+id/rl_yue"
+        android:padding="@dimen/padding"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_tuijianyigepengyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/jinbi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/tv_yue"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_tuijianyigepengyou"
+            android:layout_marginLeft="@dimen/padding"
+            />
+
+
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:button="@drawable/typegouxuan_selector"
+            android:id="@+id/cb_yue"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_nian"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/padding"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_tuijianwugepengyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/jinbi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/iv_tuijianwugepengyou"
+            android:id="@+id/tv_nian"
+            android:textColor="@color/black" />
+
+
+        <CheckBox
+            android:id="@+id/cb_nian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding"
+            android:button="@drawable/typegouxuan_selector" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graybj">
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="45dp"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="@dimen/bigpadding"
+            android:text="开通VIP"
+            android:id="@+id/bt_agree"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

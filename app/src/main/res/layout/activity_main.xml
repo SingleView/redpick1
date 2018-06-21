@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wlhb.hongbao.ui.activity.MainActivity">
+
+
+    <include
+        android:id="@+id/tab"
+        layout="@layout/custom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fengexian" />
+
+    <View
+        android:id="@+id/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/tab"
+        android:background="#BFBFBF" />
+
+    <FrameLayout
+        android:id="@+id/fl_tianjia"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/Iv_home_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/jia" />
+
+        <Button
+            android:id="@+id/bt_mainxtshumu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="@dimen/padding"
+            android:background="@drawable/xiaoxishumu_bg"
+            android:clickable="false"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+
+</RelativeLayout>

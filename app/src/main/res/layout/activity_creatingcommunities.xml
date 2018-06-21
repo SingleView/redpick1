@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/graybj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding"
+
+        android:background="@color/graybj"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id="@+id/rl_city"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/spin_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="点击选择地址"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/bigpadding" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="8dp"
+                android:layout_alignRight="@id/spin_city"
+                android:src="@drawable/shequliebiao_xiala"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/graybj"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="请输入社区名称(最多30个字)"
+            android:maxLength="30"
+            android:padding="@dimen/padding"
+            android:textSize="15dp"
+            android:id="@+id/et_name"
+            android:background="@color/white"
+            android:layout_height="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/graybj"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="请对你的社区进行文字描述"
+            android:gravity="top|left"
+            android:textSize="15dp"
+            android:padding="@dimen/padding"
+            android:id="@+id/et_content"
+            android:background="@color/white"
+            android:layout_height="180dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/graybj"/>
+
+        <EditText
+            android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:hint="请输入您的社区公共内容,社区公告可实时进行编辑更新"
+            android:padding="@dimen/padding"
+            android:textSize="15dp"
+            android:id="@+id/et_remark"
+            android:background="@color/white"
+            android:layout_height="122dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/graybj"/>
+
+        <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+            android:id="@+id/snpl_moment_add_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+            app:bga_snpl_deleteDrawableOverlapQuarter="false"
+            app:bga_snpl_editable="true"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="3"
+            app:bga_snpl_itemWhiteSpacing="10dp"
+            app:bga_snpl_itemWidth="0dp"
+            app:bga_snpl_maxItemCount="9"
+            app:bga_snpl_otherWhiteSpacing="100dp"
+            app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+            app:bga_snpl_plusDrawable="@drawable/ic_add"
+            app:bga_snpl_plusEnable="true"
+            app:bga_snpl_sortable="true"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

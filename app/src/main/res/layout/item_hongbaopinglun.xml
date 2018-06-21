@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+<LinearLayout
+    android:id="@+id/item_recycler_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/mpadding"
+    android:id="@+id/rl_fjdritem"
+    android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:id="@+id/iv_touxiang"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textblack"
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@id/iv_touxiang"
+            android:layout_marginLeft="@dimen/padding"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textblack"
+            android:id="@+id/tv_shijian"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/padding"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jianju"
+            android:padding="1dp"
+            android:textColor="@color/textblack"
+            android:background="#fafafa"
+            android:id="@+id/tv_neirong"
+            android:focusable="true"
+            android:layout_toRightOf="@id/iv_touxiang"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="13dp"
+            />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="回复"
+        android:id="@+id/tv_huifu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/padding"
+        android:textColor="@color/blue"
+        android:background="@null"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginRight="@dimen/jianju"/>
+
+
+</RelativeLayout>
+
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/dp_50"
+        android:id="@+id/rv_pinglunhuifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

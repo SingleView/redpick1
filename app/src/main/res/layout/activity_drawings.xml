@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybj">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/padding"
+        android:padding="@dimen/padding"
+        android:id="@+id/rl_tix"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="请输入提现金额"
+            android:textSize="14dp"
+            android:gravity="right"
+            android:textCursorDrawable="@null"
+            android:id="@+id/et_txje"
+            android:inputType="numberDecimal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_tix"
+        android:id="@+id/tv_ktxje"
+        android:layout_margin="@dimen/padding"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_bg"
+        android:text="提      交"
+        android:id="@+id/bt_tix"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/red"
+        ></LinearLayout>
+
+    <include
+        android:id="@+id/activity_base_title"
+        layout="@layout/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rv_sheqv">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/graybj"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:id="@+id/ll_fujindongtai">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fujindongtai"
+                android:textColor="@color/red"
+                android:layout_centerInParent="true"
+                android:text="附近动态"
+                />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="@color/red"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/xiahuaxianyi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/jianju"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/ll_fujinderen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fujinderen"
+                android:layout_centerInParent="true"
+                android:text="附近的人"
+
+                />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="@color/red"
+                android:id="@+id/xiahuaxianer"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/jianju"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_fujindongtai">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/graybj"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/jianju"
+                    android:id="@+id/rg_fjdt"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_fujin"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="附近"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_quanshi"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:gravity="center"
+                        android:text="全市"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_quansheng"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:gravity="center"
+                        android:text="全省"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_quanguo"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:gravity="center"
+                        android:text="全国"
+                        />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/rl_sx"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="筛选"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_sx"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/saixuan"
+                        android:layout_toRightOf="@id/tv_sx"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_fjdt">
+
+            </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_fujinderen"
+        android:visibility="gone">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/jianju"
+                    android:id="@+id/rg_fjdr"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_meinv"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="只看帅哥"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_shuaige"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:gravity="center"
+                        android:text="只看美女"
+                        />
+
+
+                    <RadioButton
+                        android:visibility="invisible"
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        />
+
+                    <RadioButton
+                        style="@style/fujin_bottom_tab_style"
+                        android:background="@drawable/faxian_selector"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:layout_marginRight="@dimen/jianju"
+                        android:visibility="invisible"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_fjdr">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

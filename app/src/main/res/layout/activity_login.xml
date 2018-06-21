@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/toppadding"
+            android:text="手机号"
+            android:textColor="@color/black"
+ />
+
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="@dimen/jianju"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="@dimen/padding"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+ />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/et_id"
+            android:layout_marginTop="30dp"
+            android:text="密码"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="@dimen/jianju"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="@dimen/padding"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+ />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.5dp"
+        android:layout_below="@+id/et_password"
+        android:layout_toLeftOf="@id/tv_changepassword"
+
+        />
+
+        <TextView
+            android:id="@+id/tv_changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_password"
+            android:layout_marginTop="@dimen/padding" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_changepassword"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:text="登      录" />
+
+
+</RelativeLayout>

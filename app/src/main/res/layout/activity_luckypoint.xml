@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/xinyunzhi"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/TitleTextSize"
+        android:background="#FFFAF0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:text="作 用"
+            android:layout_marginTop="@dimen/padding"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="影响您抢到的单个红包额度,幸运值越高手气越高!"
+            android:textColor="@color/deepred"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:text="规 则"
+            android:layout_marginTop="@dimen/toppadding"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计10分,分数越高幸运值越高."
+            android:textColor="@color/deepred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.连续领10个红包,无评论-3分."
+            android:textColor="@color/deepred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.单个红包信息,评论+2分(沙发+3分)."
+            android:textColor="@color/deepred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.每发一个红包信息+6分."
+            android:textColor="@color/deepred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.恶意评论被删除-5分幸运值."
+            android:textColor="@color/deepred"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:text="总结提醒"
+            android:layout_marginTop="@dimen/toppadding"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遇到感兴趣的红包信息,就评论互动一下,利人利己!"
+            android:textColor="@color/deepred"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

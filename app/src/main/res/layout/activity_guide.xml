@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/guide_btn"
+        android:textColor="#FFF"
+        android:text="立即体验"
+        android:textSize="18sp"
+        android:layout_width="133dp"
+        android:layout_height="38dp"
+        android:background="@drawable/framebuttonw_bg"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="54dp"
+        />
+
+ <com.viewpagerindicator.CirclePageIndicator
+     android:id="@+id/guide_cpi"
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:layout_gravity="center_horizontal|bottom"
+     android:layout_marginBottom="20dp"
+     ></com.viewpagerindicator.CirclePageIndicator>
+
+
+    <Button
+
+        android:layout_width="54dp"
+        android:layout_height="28dp"
+        android:text="跳过"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/tv_pass"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttongray_bg"
+        />
+
+
+</FrameLayout>

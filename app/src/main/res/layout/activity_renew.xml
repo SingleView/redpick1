@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybj"
+    android:padding="@dimen/padding">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/jianju"
+            android:text="红包个数"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_geshu"
+            android:background="@null"
+            android:hint="填写个数   "
+            android:inputType="number"
+            android:gravity="right"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/hintgray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_geshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/jianju"
+            android:text="个"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/jianju"
+            android:text="续费金额"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_jinee"
+            android:background="@null"
+            android:hint="输入金额   "
+            android:gravity="right"
+            android:inputType="number"
+            android:id="@+id/et_jine"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/hintgray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_jinee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/jianju"
+            android:text="元"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/bigpadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="续费何时生效?"/>
+    <TextView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.红包领完后,立即生效"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/bigpadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="续费的用途?"/>
+    <TextView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.积攒人气(积累留言,点赞等互动)"/>
+    <TextView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.影响更多的用户(没有重复领取的问题)"/>
+    <TextView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.更简单(再无编辑重复内容的麻烦)"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg"
+            android:layout_centerInParent="true"
+            android:text="续      费"
+            android:id="@+id/bt_xufei"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

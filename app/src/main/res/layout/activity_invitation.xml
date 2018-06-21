@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/popw"
+        android:layout_width="2dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"/>
+
+
+        <ScrollView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sv_tiez"
+            android:layout_above="@id/rl_tzpl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/jianju">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/jianju">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_touxiang"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding"
+                        android:layout_toRightOf="@id/iv_touxiang"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_shijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/padding"
+                        android:layout_marginTop="@dimen/jianju" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_tznr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding" />
+
+                <cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout
+                    android:id="@+id/npl_item_moment_photos"
+                    style="@style/MatchWrap"
+                    android:layout_below="@id/tv_neirong"
+                    app:bga_npl_itemCornerRadius="0dp"
+                    app:bga_npl_itemSpanCount="3"
+                    app:bga_npl_itemWhiteSpacing="4dp"
+                    app:bga_npl_itemWidth="0dp"
+                    app:bga_npl_otherWhiteSpacing="64dp"
+                    app:bga_npl_placeholderDrawable="@drawable/zwt"
+                    app:bga_npl_showAsLargeWhenOnlyOne="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/jianju"
+                    android:background="@color/graybj" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_zan"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/jianju"
+                        android:button="@drawable/zan_selector" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_fangke"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/toppadding"
+                        android:padding="6dp" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/arrow_more" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/graybj" />
+
+                <TextView
+                    android:id="@+id/tv_plts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="共X条评论" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rl_pl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rl_tzpl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_pl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/jianju"
+            android:layout_weight="8"
+            android:background="@drawable/framebuttongray_bg"
+            android:hint="  您可以进行评论(最多140个字)"
+            android:textSize="15dp"
+            android:maxLength="140"
+            android:minHeight="45dp"
+            android:padding="@dimen/jianju" />
+
+        <Button
+            android:id="@+id/bt_fbpl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/jianju"
+            android:layout_weight="3"
+            android:background="@drawable/framebuttongray_bg"
+            android:text="评论" />
+
+    </LinearLayout>
+
+</RelativeLayout>

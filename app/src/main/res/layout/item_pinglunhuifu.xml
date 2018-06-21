@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+<LinearLayout
+    android:id="@+id/item_recycler_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/jianju"
+    android:id="@+id/rl_fjdritem"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textColor="@color/textblack"
+            android:background="#fafafa"
+            android:maxLength="140"
+            android:id="@+id/tv_neirong"
+            android:layout_toRightOf="@id/iv_touxiang"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybj"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="12dp"
+        android:id="@+id/et_jynr"
+        android:background="@color/white"
+        android:padding="@dimen/padding"
+        android:hint="请输入您的社区建议内容"
+        android:textColorHint="@color/hintgray"
+        android:gravity="top|left"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:text="提      交"
+        android:id="@+id/bt_tjgg"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

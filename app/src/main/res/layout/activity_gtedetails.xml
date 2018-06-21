@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <lib.homhomlib.design.SlidingLayout
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_above="@id/rl_hbjl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliding_mode="top"
+        app:background_view="@layout/slview_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/graybj"
+        android:layout_height="185dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp"
+            android:id="@+id/popw"
+            android:layout_alignParentRight="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/tuoyuan2">
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_tx"
+            android:src="@drawable/logo" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/iv_tx"
+            android:id="@+id/ll_hongbao"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/tv_name"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_hbzt"
+            android:layout_below="@+id/ll_hongbao"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_lqgs"
+            android:text="已领取"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybj"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_lqjl"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+
+    </lib.homhomlib.design.SlidingLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_hbjl"
+        android:layout_alignParentBottom="true"
+        android:background="@color/graybj">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看我的红包记录"
+            android:autoLink="all"
+            android:id="@+id/tv_wdlqjl"
+            android:layout_centerInParent="true"
+            android:textColor="@color/blue"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>

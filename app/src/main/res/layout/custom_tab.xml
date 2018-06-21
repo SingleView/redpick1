@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_gravity="bottom">
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <!--android:checked="true"-->
+        <RadioButton
+
+            android:id="@+id/main_hongbao_rb"
+            style="@style/MainBottomRadioButton"
+            android:drawableTop="@drawable/b_hongbao_selector"
+            android:text="小圆" />
+
+        <RadioButton
+            android:id="@+id/main_discover_rb"
+            style="@style/MainBottomRadioButton"
+            android:drawableTop="@drawable/b_discover_selector"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/main_issue"
+            style="@style/MainBottomRadioButton"
+            android:clickable="false"
+            android:longClickable="false" />
+
+        <RadioButton
+            android:id="@+id/main_message_rb"
+            style="@style/MainBottomRadioButton"
+            android:drawableTop="@drawable/b_message_selector"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/main_mine_rb"
+            style="@style/MainBottomRadioButton"
+            android:drawableTop="@drawable/b_mine_selector"
+            android:text="我的" />
+    </RadioGroup>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:id="@+id/pop_fx">
+
+        <ImageView
+            android:layout_marginTop="@dimen/jianju"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/jianju"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_blue"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/jianju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 分享"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybj"/>
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:id="@+id/pop_tous">
+
+        <ImageView
+            android:layout_marginTop="@dimen/jianju"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/jianju"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tousu"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/jianju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   投诉"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybj"/>
+
+<LinearLayout
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:id="@+id/pop_hmd">
+
+    <ImageView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/jianju"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lahei"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/jianju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_lh"
+        android:text="  拉黑该用户"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

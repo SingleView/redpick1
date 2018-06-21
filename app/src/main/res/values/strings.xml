@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">小圆</string>
+
+    <string name="redpacket">红包</string>
+    <string name="discover">发现</string>
+    <string name="issue">发布</string>
+    <string name="information">消息</string>
+    <string name="mine">我的</string>
+
+
+    <string name="rationale_camera">这个程序需要访问你的相机可以拍照以及定位权限</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <declare-styleable name="SwipeFlingAdapterView">
+        <attr name="SwipeFlingStyle" format="reference" />
+        <attr name="rotation_degrees" format="float" />
+        <attr name="min_adapter_stack" format="integer" />
+        <attr name="max_visible" format="integer" />
+    </declare-styleable>
+
+
+</resources>
